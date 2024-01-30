@@ -8,5 +8,5 @@ steps:
   group: build
   commands:
     - yarn install
-    - yarn run build:prod
+    - yarn run build
     - yarn run test
