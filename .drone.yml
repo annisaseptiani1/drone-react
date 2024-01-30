@@ -1,0 +1,12 @@
+kind: pipeline
+name: build
+
+steps:
+  # Install dependencies, build and test the typescript code
+- name: build
+  image: node:10-alpine
+  group: build
+  commands:
+    - yarn install
+    - yarn run build:prod
+    - yarn run test
